@@ -1,9 +1,8 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.natamus.tntbreaksbedrock.forge.mixin",
+  "package": "com.natamus.tntbreaksbedrock.mixin",
   "compatibilityLevel": "JAVA_17",
-  "refmap": "tntbreaksbedrock_forge.refmap.json",
   "mixins": [
 
   ],
