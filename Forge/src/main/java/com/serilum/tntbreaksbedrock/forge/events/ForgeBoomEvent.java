@@ -1,6 +1,6 @@
-package com.natamus.tntbreaksbedrock.forge.events;
+package com.serilum.tntbreaksbedrock.forge.events;
 
-import com.natamus.tntbreaksbedrock.events.BoomEvent;
+import com.serilum.tntbreaksbedrock.events.BoomEvent;
 import net.minecraft.world.level.Explosion;
 import net.minecraftforge.event.level.ExplosionEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

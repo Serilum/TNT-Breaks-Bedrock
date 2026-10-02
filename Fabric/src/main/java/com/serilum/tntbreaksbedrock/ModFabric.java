@@ -1,10 +1,10 @@
-package com.natamus.tntbreaksbedrock;
+package com.serilum.tntbreaksbedrock;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
 import com.natamus.collective.fabric.callbacks.CollectiveExplosionEvents;
-import com.natamus.tntbreaksbedrock.events.BoomEvent;
-import com.natamus.tntbreaksbedrock.util.Reference;
+import com.serilum.tntbreaksbedrock.events.BoomEvent;
+import com.serilum.tntbreaksbedrock.util.Reference;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.Explosion;
