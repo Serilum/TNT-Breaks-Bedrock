@@ -1,9 +1,9 @@
-package com.natamus.tntbreaksbedrock;
+package com.serilum.tntbreaksbedrock;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.tntbreaksbedrock.forge.events.ForgeBoomEvent;
-import com.natamus.tntbreaksbedrock.util.Reference;
+import com.serilum.tntbreaksbedrock.forge.events.ForgeBoomEvent;
+import com.serilum.tntbreaksbedrock.util.Reference;
 import net.minecraftforge.eventbus.api.bus.BusGroup;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLLoadCompleteEvent;
@@ -27,7 +27,7 @@ public class ModForge {
 	}
 
 	private void loadComplete(final FMLLoadCompleteEvent event) {
-    	ForgeBoomEvent.registerEventsInBus();
+		ForgeBoomEvent.registerEventsInBus();
 	}
 
 	private static void setGlobalConstants() {
