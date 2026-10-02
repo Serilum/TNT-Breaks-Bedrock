@@ -1,6 +1,6 @@
-package com.natamus.tntbreaksbedrock.events;
+package com.serilum.tntbreaksbedrock.events;
 
-import com.natamus.tntbreaksbedrock.util.Util;
+import com.serilum.tntbreaksbedrock.util.Util;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.item.PrimedTnt;
