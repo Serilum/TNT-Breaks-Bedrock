@@ -1,9 +1,9 @@
-package com.natamus.tntbreaksbedrock;
+package com.serilum.tntbreaksbedrock;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.tntbreaksbedrock.neoforge.events.NeoForgeBoomEvent;
-import com.natamus.tntbreaksbedrock.util.Reference;
+import com.serilum.tntbreaksbedrock.neoforge.events.NeoForgeBoomEvent;
+import com.serilum.tntbreaksbedrock.util.Reference;
 import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;

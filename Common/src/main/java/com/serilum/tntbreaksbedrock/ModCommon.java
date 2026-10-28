@@ -1,4 +1,4 @@
-package com.natamus.tntbreaksbedrock;
+package com.serilum.tntbreaksbedrock;
 
 
 public class ModCommon {
