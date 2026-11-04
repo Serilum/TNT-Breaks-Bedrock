@@ -1,22 +1,21 @@
 package com.serilum.tntbreaksbedrock.util;
 
-import net.minecraft.core.BlockPos;
-import net.minecraft.world.level.Level;
+import com.serilum.tntbreaksbedrock.config.ConfigHandler;
+import net.minecraft.world.entity.item.PrimedTnt;
+import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.block.Blocks;
-
-import java.util.ArrayList;
-import java.util.List;
+import net.minecraft.world.level.block.state.BlockState;
 
 public class Util {
-	public static List<BlockPos> getBedrocks(Level world, BlockPos p) {
-		List<BlockPos> bedrocks = new ArrayList<BlockPos>();
-
-		for (BlockPos bp : BlockPos.betweenClosed(p.getX(), p.getY() - 1, p.getZ(), p.getX(), p.getY() + 1, p.getZ())) {
-			if (world.getBlockState(bp).getBlock().equals(Blocks.BEDROCK)) {
-				bedrocks.add(bp.immutable());
-			}
+	public static boolean canExplosionBreakBedrock(Explosion explosion, BlockState blockState) {
+		if (!blockState.is(Blocks.BEDROCK)) {
+			return false;
 		}
-		
-		return bedrocks;
+
+		if (ConfigHandler.anyExplosionBreaksBedrock) {
+			return true;
+		}
+
+		return explosion.getDirectSourceEntity() instanceof PrimedTnt;
 	}
 }
