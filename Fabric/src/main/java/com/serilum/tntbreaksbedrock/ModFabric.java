@@ -2,16 +2,11 @@ package com.serilum.tntbreaksbedrock;
 
 import com.natamus.collective.check.RegisterMod;
 import com.natamus.collective.check.ShouldLoadCheck;
-import com.natamus.collective.fabric.callbacks.CollectiveExplosionEvents;
-import com.serilum.tntbreaksbedrock.events.BoomEvent;
 import com.serilum.tntbreaksbedrock.util.Reference;
 import net.fabricmc.api.ModInitializer;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.world.level.Explosion;
-import net.minecraft.world.level.Level;
 
 public class ModFabric implements ModInitializer {
-	
+
 	@Override
 	public void onInitialize() {
 		if (!ShouldLoadCheck.shouldLoad(Reference.MOD_ID)) {
@@ -27,9 +22,7 @@ public class ModFabric implements ModInitializer {
 	}
 
 	private void loadEvents() {
-		CollectiveExplosionEvents.EXPLOSION_DETONATE.register((Level world, Entity sourceEntity, Explosion explosion) -> {
-			BoomEvent.onExplosion(world, sourceEntity, explosion);
-		});
+
 	}
 
 	private static void setGlobalConstants() {

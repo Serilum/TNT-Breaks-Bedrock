@@ -4,7 +4,7 @@
   "package": "com.serilum.tntbreaksbedrock.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-
+    "ExplosionDamageCalculatorMixin"
   ],
   "client": [
   

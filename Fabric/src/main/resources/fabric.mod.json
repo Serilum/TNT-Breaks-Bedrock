@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "tntbreaksbedrock",
-  "version": "3.7",
+  "version": "4.0",
 
   "name": "TNT Breaks Bedrock",
   "description": "Allows TNT to break bedrock. Now you've finally got easy access to the nether roof.",
@@ -16,20 +16,23 @@
   "icon": "icon.png",
 
   "environment": "*",
-  "entrypoints": { "main": [ "com.serilum.tntbreaksbedrock.ModFabric" ] },
+  "entrypoints": { "main": [ "com.serilum.tntbreaksbedrock.ModFabric" ], "modmenu": [ "com.serilum.tntbreaksbedrock.fabric.config.IntegrateModMenu" ] },
+  "mixins": [
+    "tntbreaksbedrock.mixins.json"
+  ],
 
   "depends": {
     "fabricloader": ">=0.15.0",
     "fabric": "*",
     "minecraft": ">=1.21",
     "java": ">=21",
-    "collective": ">=8.40"
+    "collective": ">=8.77"
   },
 
   "custom": {
     "modmenu": {
       "links": {
-        "Donate <3" : "https://serilum.com/donate"
+        "❤ Patreon" : "https://link.serilum.com/patreon"
       }
     }
   },
@@ -41,8 +44,6 @@
 	  "If you would like to contribute too, check out https://serilum.com/donate",
 	  " ",
 	  "Membership sponsors:",
-	  " Andrean Olgo",
-	  " AnyankaT",
 	  " aternosorg",
 	  " Cherriesaurus",
 	  " Linda Jansen",
